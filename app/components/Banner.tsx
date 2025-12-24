@@ -44,7 +44,7 @@ export default function Banner(): React.JSX.Element {
                 priority
               />
               <Image
-                src="/assets/me-glow.png"
+                src="/assets/54-543874_blue-glow-effect-png.png"
                 alt="Brayden Jones - AI Automation Specialist"
                 width={300}
                 height={300}
