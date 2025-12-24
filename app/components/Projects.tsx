@@ -32,11 +32,11 @@ export default function Projects(): React.JSX.Element {
           
           return (
             <div key={project.id} className="mb-20 last:mb-0">
-              <div className={`relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
+              <div className={`relative grid grid-cols-1 ${index === 0 ? "" : "lg:grid-cols-2"} gap-8 lg:gap-12 items-center ${
                 isEven ? "lg:grid-flow-dense" : ""
               }`}>
                 {/* Text Content */}
-                <div className={`${isEven ? "lg:col-start-2" : ""}`}>
+                <div className={`${index === 0 ? "lg:max-w-3xl lg:mx-auto" : ""} ${isEven ? "lg:col-start-2" : ""}`}>
                   <p className="text-purple-400 text-lg lg:text-xl mb-2 font-medium">
                     Featured Project
                   </p>
@@ -83,19 +83,21 @@ export default function Projects(): React.JSX.Element {
                 </div>
 
                 {/* Image Content */}
-                <div className={`${isEven ? "lg:col-start-1 lg:row-start-1" : ""}`}>
-                  <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 p-2 lg:p-3 shadow-2xl">
-                    <div className="relative w-full h-full rounded-lg overflow-hidden">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        sizes="(max-width: 1024px) 100vw, 50vw"
-                        className="object-cover"
-                      />
+                {index !== 0 && (
+                  <div className={`${isEven ? "lg:col-start-1 lg:row-start-1" : ""}`}>
+                    <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 p-2 lg:p-3 shadow-2xl">
+                      <div className="relative w-full h-full rounded-lg overflow-hidden">
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          sizes="(max-width: 1024px) 100vw, 50vw"
+                          className="object-cover"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           );
