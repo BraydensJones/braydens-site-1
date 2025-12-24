@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface Project {
   id: number;
   title: string;
@@ -27,27 +25,21 @@ export default function Projects(): React.JSX.Element {
   return (
     <section id="lab" className="py-20 px-6">
       <div className="container mx-auto max-w-7xl">
-        {featuredProjects.map((project, index) => {
-          const isEven = index % 2 === 1;
-          
+        {featuredProjects.map((project) => {
           return (
             <div key={project.id} className="mb-20 last:mb-0">
-              <div className={`relative grid grid-cols-1 ${index === 0 ? "" : "lg:grid-cols-2"} gap-8 lg:gap-12 items-center ${
-                isEven ? "lg:grid-flow-dense" : ""
-              }`}>
+              <div className="relative grid grid-cols-1 gap-8 lg:gap-12 items-center">
                 {/* Text Content */}
-                <div className={`${index === 0 ? "lg:max-w-3xl lg:mx-auto" : ""} ${isEven ? "lg:col-start-2" : ""}`}>
+                <div className="lg:max-w-3xl lg:mx-auto">
                   <p className="text-purple-400 text-lg lg:text-xl mb-2 font-medium">
                     Featured Project
                   </p>
                   <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">
                     {project.title}
                   </h3>
-                  {/* Description Card - extends over image */}
+                  {/* Description Card */}
                   <div className="relative z-10 mb-6">
-                    <div className={`bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-md rounded-2xl p-6 lg:p-8 border border-white/10 shadow-lg ${
-                      isEven ? "lg:ml-[-20%]" : "lg:w-[calc(100%+20%)]"
-                    }`}>
+                    <div className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-md rounded-2xl p-6 lg:p-8 border border-white/10 shadow-lg">
                       <p className="text-white/90 text-base lg:text-lg leading-relaxed">
                         {project.description}
                       </p>
@@ -82,22 +74,6 @@ export default function Projects(): React.JSX.Element {
                   )}
                 </div>
 
-                {/* Image Content */}
-                {index !== 0 && (
-                  <div className={`${isEven ? "lg:col-start-1 lg:row-start-1" : ""}`}>
-                    <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 p-2 lg:p-3 shadow-2xl">
-                      <div className="relative w-full h-full rounded-lg overflow-hidden">
-                        <Image
-                          src={project.image}
-                          alt={project.title}
-                          fill
-                          sizes="(max-width: 1024px) 100vw, 50vw"
-                          className="object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                )}
               </div>
             </div>
           );
