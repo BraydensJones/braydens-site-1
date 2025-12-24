@@ -31,16 +31,16 @@ export default function Projects(): React.JSX.Element {
               <div className="relative grid grid-cols-1 gap-8 lg:gap-12 items-center">
                 {/* Text Content */}
                 <div className="lg:max-w-3xl lg:mx-auto">
-                  <p className="text-purple-400 text-lg lg:text-xl mb-2 font-medium">
+                  <p className="text-[#00F0FF] text-lg lg:text-xl mb-2 font-medium">
                     Featured Project
                   </p>
-                  <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
                     {project.title}
                   </h3>
                   {/* Description Card */}
                   <div className="relative z-10 mb-6">
-                    <div className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-md rounded-2xl p-6 lg:p-8 border border-white/10 shadow-lg">
-                      <p className="text-white/90 text-base lg:text-lg leading-relaxed">
+                    <div className="bg-gradient-to-br from-gray-50 to-gray-100 backdrop-blur-md rounded-2xl p-6 lg:p-8 border border-gray-200 shadow-lg">
+                      <p className="text-gray-700 text-base lg:text-lg leading-relaxed">
                         {project.description}
                       </p>
                     </div>
@@ -52,7 +52,7 @@ export default function Projects(): React.JSX.Element {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white hover:text-purple-400 transition-colors duration-200"
+                        className="text-gray-800 hover:text-[#00F0FF] transition-colors duration-200"
                         aria-label="Visit project website"
                       >
                         <svg

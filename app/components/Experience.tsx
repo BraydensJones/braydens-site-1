@@ -39,14 +39,14 @@ export default function Experience(): React.JSX.Element {
   return (
     <section id="experience" className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
+        <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-12 text-center">
           Work I&apos;ve Done
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {experienceCards.map((card) => (
             <div
               key={card.id}
-              className="bg-gradient-to-r from-slate-950 via-purple-950 to-slate-950  backdrop-blur-sm rounded-xl p-6 border-t-3 border-purple-700 hover:shadow-2xl hover:shadow-purple-900 flex items-center gap-4"
+              className="bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50 backdrop-blur-sm rounded-xl p-6 border-t-3 border-[#00F0FF] hover:shadow-2xl hover:shadow-[#00F0FF]/20 flex items-center gap-4"
             >
               <div className="mb-4 ">
                 <Image
@@ -58,17 +58,17 @@ export default function Experience(): React.JSX.Element {
                 />
               </div>
               <div>
-              <h3 className="text-xl font-semibold text-white mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 {card.title}
               </h3>
-              <p className="text-white/70 text-sm mb-4">
+              <p className="text-gray-600 text-sm mb-4">
                 {card.description}
               </p>
               <Link
                 href="https://ibiimemon.com/lab"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors inline-block"
+                className="text-[#00F0FF] hover:text-[#00D0E0] font-medium text-sm transition-colors inline-block"
               >
                 VIEW DETAILS →
               </Link>

@@ -2,25 +2,25 @@ import Link from "next/link";
 
 export default function Footer(): React.JSX.Element {
   return (
-    <footer id="contact" className="py-10  px-6 border-t border-white/10">
+    <footer id="contact" className="py-10  px-6 border-t border-gray-200">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
             Contact
           </h2>
-          <p className="text-md text-white/80 max-w-2xl mx-auto mb-8">
+          <p className="text-md text-gray-700 max-w-2xl mx-auto mb-8">
             I&apos;m currently looking to partner with local service businesses that want to stop missing calls, book more jobs, and use AI to simplify their day‑to‑day operations. If you&apos;ve got a business in the Saratoga / Glens Falls area or a project in mind, let&apos;s talk.
           </p>
           <div className="flex flex-col gap-2 items-center">
             <a
               href="mailto:bsaundersjones@gmail.com"
-              className="text-md text-purple-400 hover:text-purple-300 transition-colors"
+              className="text-md text-[#00F0FF] hover:text-[#00D0E0] transition-colors"
             >
               bsaundersjones@gmail.com
             </a>
             <a
               href="tel:5188126266"
-              className="text-md text-purple-400 hover:text-purple-300 transition-colors"
+              className="text-md text-[#00F0FF] hover:text-[#00D0E0] transition-colors"
             >
               518‑812‑6266
             </a>
@@ -33,11 +33,11 @@ export default function Footer(): React.JSX.Element {
             href="https://www.facebook.com/brayden.saunders.jones/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 border border-[#00F0FF]/30 hover:border-[#00F0FF]/50 transition-all"
             aria-label="Facebook"
           >
             <svg
-              className="w-5 h-5 text-white"
+              className="w-5 h-5 text-gray-800"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -48,11 +48,11 @@ export default function Footer(): React.JSX.Element {
             href="https://x.com/brayden_only"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 border border-[#00F0FF]/30 hover:border-[#00F0FF]/50 transition-all"
             aria-label="X (formerly Twitter)"
           >
             <svg
-              className="w-5 h-5 text-white"
+              className="w-5 h-5 text-gray-800"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -63,11 +63,11 @@ export default function Footer(): React.JSX.Element {
             href="https://www.linkedin.com/in/brayden-jones-2947832a7/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 border border-[#00F0FF]/30 hover:border-[#00F0FF]/50 transition-all"
             aria-label="LinkedIn"
           >
             <svg
-              className="w-5 h-5 text-white"
+              className="w-5 h-5 text-gray-800"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -76,8 +76,8 @@ export default function Footer(): React.JSX.Element {
           </Link>
         </div>
 
-        <div className="text-center mt-12 pt-8 border-t border-white/10">
-          <p className="text-white/60 text-sm">
+        <div className="text-center mt-12 pt-8 border-t border-gray-200">
+          <p className="text-gray-600 text-sm">
             © 2025 Brayden Jones. All rights reserved.
           </p>
         </div>
