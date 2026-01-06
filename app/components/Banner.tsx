@@ -75,13 +75,7 @@ export default function Banner(): React.JSX.Element {
             </div>
             <div className="">
               <h1 className="text-5xl tracking-tight lg:text-7xl font-semibold text-gray-800 leading-tight">
-                An AI specialist who judges a business by its{" "}
-                <span className="relative inline-block">
-                  <span className="text-[#00F0FF]">
-                    missed calls
-                  </span>
-                </span>
-                .
+                An AI specialist who helps local HVAC companies automate the chaos so you can focus on what really matters.
               </h1>
               <p className="text-md text-gray-700">
                 Because if your leads don&apos;t get answered, what else matters?
