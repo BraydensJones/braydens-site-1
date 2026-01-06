@@ -78,7 +78,7 @@ export default function Banner(): React.JSX.Element {
                 An AI specialist who helps local HVAC companies automate the chaos so you can focus on what <span className="text-[#00F0FF]">really matters</span>.
               </h1>
               <p className="text-md text-gray-700">
-                Because if your leads don&apos;t get answered, what else matters?
+                I help you capture every opportunity without working more hours.
               </p>
             </div>
           </div>
