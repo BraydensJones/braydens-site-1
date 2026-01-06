@@ -85,10 +85,10 @@ export default function Banner(): React.JSX.Element {
         </div>
         <div className="space-y-3 pt-15 text-center lg:text-left">
           <p className="text-5xl text-gray-800 font-bold">
-            I build AI automations for local businesses in Upstate New York.
+            I help local HVAC companies automate their operations without losing the personal touch.
           </p>
           <p className="text-lg lg:text-xl text-gray-700 tracking-wide">
-            Currently, I design and deploy custom chat, phone, and email systems that have helped home‑service, HVAC, and local trades capture more leads and waste less time.
+            Right now, I&apos;m helping a local HVAC company cut their office workload by 70% while increasing conversions. No extra staff needed.
           </p>
           <p className="text-lg text-gray-600 max-w-2xl mt-15 mx-auto lg:mx-0">
             Self‑taught automation specialist with real experience in HVAC, landscaping, and other hands‑on work. I build practical AI systems—website chat, phone agents, and follow‑up flows—that fit how small business owners actually operate, not how software thinks they should.
